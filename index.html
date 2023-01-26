@@ -11,8 +11,13 @@
                 font-style: italic;
                 color: brown;
             }
+            table {
+                width: 600px;
+            }
 
-            .text-formating{
+            table , tr, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
 
             }
         </style>
@@ -110,6 +115,11 @@
             <p>hello <sub>asd</sub></p>
             <p>a <sup>3</sup></p>
          </div>
+
+         <p>Hello Upstandards</p>
+         <blockquote>
+            jfdufdiuiu hjfdfdu hjfdyufdyufd hfdhjugfhjgfhjgfhj hjdfhjfj
+         </blockquote>
         
         <!-- end text formating tag -->
 
@@ -185,8 +195,165 @@
                 <li>Six</li>
                 <li>Seven</li>
             </ul>
+
+            <ul>
+                <li>Tea
+                    <ul>
+                        <li>Green Tea</li>
+                        <li>Black Tea</li>
+                    </ul>
+                </li>
+                <li>Coffee
+                    <ul>
+                        <li>Green Co</li>
+                        <li>Black Co</li>
+                    </ul>
+                </li>
+                <li>Milkshake</li>
+            </ul>
+
          </div>
         <!-- end of html list -->
+
+        <!-- html table -->
+        <div class="table">
+            <table>
+                <!-- to create a raw we have to use tr tag -->
+                <caption>Employee Details</caption>
+                <tr>
+                    <th>Id</th>
+                    <th>Emp name</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>subrat</td>
+                    <td>bam</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>subrat</td>
+                    <td>bam</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>subrat</td>
+                    <td>bam</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>subrat</td>
+                    <td>bam</td>
+                </tr>
+            </table>
+<hr><br>
+            <table>
+                <caption>Company Details</caption>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Upstandards</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Google</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr><br>
+            <!-- rowspan and colspan -->
+            <table>
+                <caption>Colspan & raw span</caption>
+                <thead>
+                   <tr>
+                    <th colspan="2">Full Name</th>
+                    <th>Age</th>
+                   </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>anc</td>
+                        <td>def</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                       <td colspan="2">Rishi Sunak</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>nare</td>
+                        <td>modi</td>
+                        <td>70</td>
+                    </tr>
+                </tbody>
+            </table>
+<hr><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Main Table</th>
+                        <th colspan="3">Employee Details</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>john</td>
+                        <td>30</td>
+                        <td>12-12-1994</td>
+                        <td>109234</td>
+                        <td>USA</td>
+                        <td>20K</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr><br>
+
+            <table>
+                <caption>rowspan</caption>
+                <tr>
+                    <th>Name</th>
+                    <td>Upstandards</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="5">Address</th>
+                    <td>kalinga vihar 1st lane
+                   </td>
+                </tr>
+
+                <tr>
+                    <td>berhampur
+                    </td>
+                </tr>
+                <tr>
+                    <td>odisha
+                    </td>
+                </tr>
+                <tr>
+                    <td>760010
+                    </td>
+                </tr>
+                <tr>
+                    <td>india
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end html table -->
+
+        <span>abc defdssfsdgdsg</span><strong>deg</strong>
+        <p>abc</p><p>def</p>
     </body>
 
 </html>
