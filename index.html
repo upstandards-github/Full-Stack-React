@@ -458,16 +458,25 @@
         <span>HTML</span>
     </section>
 
-    <section>
-        <h1>Semantic Tag</h1>
-        <div>
+    <section id="multimedia">
+        <h1>Multimedia in HTML</h1>
+        <audio controls >
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-        </div>
-    </section>
-    <section>
-        fgff
-    </section>
+        <!-- other property autoplay, muted -->
+<br><hr>
+        <video width="320" height="240" controls autoplay muted>
+            <source src="./multimedia/video1.mp4" type="video/mp4">
+            <source src="./multimedia/video1.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+<br><hr>
 
+<iframe width="560" name="youtube" height="315" src="https://www.youtube.com/embed/daIPPBDdlA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/embed/daIPPBDdlA4" target="_parent">youtube</a></p>
+</section>
 </body>
 
 </html>
