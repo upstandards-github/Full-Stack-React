@@ -2,3 +2,46 @@
     color: rgb(80, 106, 17);
     font-style: italic;
 }
+
+*{
+    font-family: monospace;
+}
+
+body {
+    background-color: papayawhip;
+}
+
+h1 {
+    color: brown;
+}
+
+h1.yellow {
+    color: yellow;
+}
+
+p span {
+    text-transform: uppercase;
+}
+
+.articlefont{
+    font-size: 20px;
+    color: red;
+}
+
+
+#para{
+    color: rgb(0,0,255);
+}
+
+#para1 {
+    color: rgba(52, 33, 74, 0.5);
+}
+
+#para2{
+    color: #f300f3;
+}
+
+a:hover{
+    color: red;
+}
+
