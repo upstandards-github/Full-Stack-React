@@ -5,6 +5,8 @@
 
 *{
     font-family: monospace;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -26,6 +28,7 @@ p span {
 .articlefont{
     font-size: 20px;
     color: red;
+    text-decoration: underline;
 }
 
 
@@ -43,5 +46,37 @@ p span {
 
 a:hover{
     color: red;
+}
+
+.unit {
+    font-size: 2rem;
+    margin: 40px;
+    border: 2px solid red; 
+    /* border-style: dashed;
+    border-width: 2px;*/
+    border-color: red;
+}
+
+.unit1 {
+    border: 2px solid red;
+    width: 80%;
+    height: 100px;
+     /* margin-top: 30px; 
+    margin-right: ;
+    margin-left: ;
+    margin-bottom: ; */
+    margin: 30px;
+    padding: 10px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: gold;
+    margin: 30px;
+    border-radius: 50px;
+    outline: 5px solid red;
+    outline-offset: 5px;
 }
 
