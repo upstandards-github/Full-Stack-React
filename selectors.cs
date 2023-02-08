@@ -74,5 +74,19 @@ display; inline, block, none, inline-block
 
 float: left, right
 
+Possition in css
+=====================
+
+static: default
+absolute
+relative 
+fixed
+sticky
+
+Possition:value
+
+
+
+
 
 

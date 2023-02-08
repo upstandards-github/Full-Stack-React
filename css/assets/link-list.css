@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration:none;
     color: #012970;
@@ -23,6 +27,7 @@ a:active{
 
 h2{
     display: inline;
+    color: #012970;
 }
 
 ul {
@@ -57,7 +62,7 @@ p {
 
 .column p {
     color: red;
-    column-count: 4;
+    column-count: 3;
 }
 
 /* li {
