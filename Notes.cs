@@ -49,3 +49,23 @@ The flex container properties are:
         stretch: Lines are stretched to fit the container.
 
         https://flexboxfroggy.com/
+
+Media Query
+--------------
+
+desktop > 1200px
+tablet > 900px
+mobile > 600px
+
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.
+
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+
+You can also have different stylesheets for different media:
+
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
