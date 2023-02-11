@@ -69,3 +69,22 @@ You can also have different stylesheets for different media:
 
 <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
 
+
+CSS Grid
+--------------
+
+The grid CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.
+
+This property is a shorthand for the following CSS properties:
+
+    grid-template-columns
+    grid-template-rows
+    grid-auto-rows
+    column-gap
+    row-gap
+    gap: row column
+    grid-template-areas
+    grid-area
+    
+   
+

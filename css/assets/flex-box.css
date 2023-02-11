@@ -23,6 +23,7 @@ body {
   flex-direction:row; */
   flex-flow: row wrap;
   /* align-items:flex-start; */
+  flex-direction: column;
   align-content:space-between;
 } 
 
