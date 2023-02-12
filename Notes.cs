@@ -85,6 +85,142 @@ This property is a shorthand for the following CSS properties:
     gap: row column
     grid-template-areas
     grid-area
-    
-   
 
+Transition and Transforms
+---------------------------
+
+With the CSS transform property you can use the following 2D transformation methods:
+
+translate(): The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+    transform: translate(50px, 100px);
+rotate(): The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+    transform: rotate(20deg);
+    transform: rotate(-20deg);
+scaleX(): The scaleX() method increases or decreases the width of an element
+scaleY(): The scaleY() method increases or decreases the height of an element.
+scale(): The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+    transform: scale(2, 3); 
+    above code will increases the element to be two times of its original width, and three times of its original height
+    transform: scale(0.5, 0.5);
+    above code will decreases the <div> element to be half of its original width and height
+skewX():The skewX() method skews an element along the X-axis by the given angle.
+    transform: skewX(20deg);
+skewY(): The skewY() method skews an element along the Y-axis by the given angle
+    transform: skewY(20deg);
+skew():
+    The skew() method skews an element along the X and Y-axis by the given angles.
+    skews the element 20 degrees along the X-axis, and 10 degrees along the Y-axis
+    transform: skew(20deg, 10deg);
+matrix(): The matrix() method combines all the 2D transform methods into one.
+    matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+CSS Transitions
+-----------------
+
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+
+To create a transition effect, you must specify two things:
+
+    the CSS property you want to add an effect to
+    the duration of the effect
+
+    transition
+    transition-delay:
+        The transition-delay property specifies a delay (in seconds) for the transition effect.
+        transition-delay: 1s;
+    transition-duration: 	Specifies how many seconds or milliseconds a transition effect takes to complete
+
+    transition-property: it can be css property
+    transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out
+
+    The transition-timing-function property specifies the speed curve of the transition effect.
+
+
+    div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s; //increase width after 2sec
+}
+
+div:hover {
+  width: 300px; 
+}
+
+transition: width 2s, height 4s; // increase width and heigh both in dif duration
+
+Transition + Transformation
+-----------------------------
+  transition: width 2s, height 2s, transform 2s;
+    div:hover {
+        transform: rotate(180deg);
+    }
+
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+
+CSS Animations
+------------------
+
+CSS allows animation of HTML elements without using JavaScript or Flash!
+
+    @keyframes
+    animation-name : name of animation in keyframes
+    animation-duration: duration to complete the animation
+    animation-delay: delay the animation
+    animation-iteration-count: it will loop the animation as per count
+    animation-direction: it specifies animation direction , normal | reverse | alternate | alternate-reverse
+    animation-timing-function: specifies the speed curve of the animation.
+    animation
+
+
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+
+To get an animation to work, you must bind the animation to an element.
+
+The following example binds the "example" animation to the  element.
+
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+   
+With combining every element of animation
+
+    div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+    @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+    }
