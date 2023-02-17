@@ -31,3 +31,21 @@ Double quotes: "Hello".
 Single quotes: 'Hello'.
 Backticks: `Hello`.
 
+
+DataType :
+===================
+
+2 types of datatypes
+
+  1. Primitive datatypes
+      Number
+      String:
+        Double quotes: "Hello".
+        Single quotes: '12'.
+        Backticks: `Hello`.
+      Boolean: true, false
+      Null
+      Undefined
+  2. Non-primitive datatypes
+      object: object, array, date
+

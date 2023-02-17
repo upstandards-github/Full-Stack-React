@@ -15,3 +15,10 @@ console.log(c);
 
 const d = 10;
 console.log(d);
+
+// write a program to find sum of 2 Number
+// var a = 10;
+// var b = 30;
+// var c = a+b;
+// console.log(c);
+
