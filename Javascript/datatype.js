@@ -10,7 +10,7 @@ let str2 = 'Hello'; //string
 const a = 10;
 const b = 30;
 let str3 = `Heloo Team ${a} + ${b} = ${a+b}`;
-document.write(str3);
+console.log(str3);
 console.log(str3);
 
 // boolean 
@@ -43,9 +43,87 @@ console.log(test); //undefined
 test = 'Hello'
 console.log(test); //hello
 
-Different between undefined and not defined
+// Different between undefined and not defined
 
-different between null and undefined
+// different between null and undefined
+
+// var a = "Hello";
+
+//My name is SUbrat , i am from berhampur, I am 28 yr old
+
+// Javascript is a case-sensitive language
+var name1 = 'Priyanka';
+var city = 'Berhampur';
+var state = 'odisha';
+var district = 'ganjam';
+var myAge = 28;
+
+
+// document.write(`My name is ${name1}, i am from ${city}, I am ${myAge} yr Old`);
+
+// Array: is a collection data or which we can access sequential data
+var arr = [];
+var person = ['Priyanka','Berhampur','odisha','ganjam',28];
+var person1 = ['Berhampur','Subrat','odisha','ganjam',28];
+
+// array aceess : arrayname[index] person[2]
+document.write(`My name is ${person[0]}, i am from ${person[1]}, I am ${person[4]} yr Old`);
+document.write(`My name is ${person1[0]}, i am from ${person1[1]}, I am ${person1[4]} yr Old`);
+
+// Object 
+// =============
+
+var obj1 = {key: 'value'};
+
+var person2 = {
+    city:'Berhampur',
+    age:28,
+    name:'Subrat'
+};
+
+document.getElementById('h2').innerHTML = person2.name;
+document.getElementById('name').innerHTML = person2.name;
+
+var person3 = {
+    age:28,
+    name:'Upstandards',
+    address : {
+        city:'berhampur',
+        district:'Ganjam',
+        pin: 760010,
+        courses:['math','science'],
+        parents:{
+            fname:'abc',
+            mname:'def'
+        }
+    }
+};
+
+// to access object , objectname.propertyname
+
+
+
+console.log(`My name is ${person2.name}, i am from ${person2.city}, I am ${person2.age} yr Old`);
+console.log(`My name is ${person3.name}, i am from ${person3.city}, I am ${person3.age} yr Old`);
+
+var employes = [
+    {
+        city:'Berhampur',
+        age:28,
+        name:'Subrat'
+    },
+    {
+        city:'Berhampur',
+        age:28,
+        name:'Upstandards'
+    }
+];
+
+console.log(`My name is ${employes[0].name}, i am from ${person3.city}, I am ${person3.age} yr Old`);
+
+
+
+
 
 
 
