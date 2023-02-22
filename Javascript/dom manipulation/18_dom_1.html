@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="home">
+        <h2>Room Price: 2500/day</h2>
+        <div>
+            <label for="">Enter Name</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+
+        <div>
+            <label for="">Total Number of days</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+
+        <div>
+            <label for="">Total Person</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+
+        <div>
+            <label for="">Advanced paid</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+
+        <div>
+            <input type="button" name="submit" value="submit">
+        </div>
+        <div>
+            <input type="radio" name="color" onclick="changeBGColor('red')" id="red"> Red
+            <input type="radio" name="color" onclick="changeBGColor('blue')" id="blue"> blue
+            <input type="radio" name="color" onclick="changeBGColor('green')" id="green"> green
+        </div>
+    </form>
+</body>
+<script>
+    console.log('Dom refer element by dom hirerchy')
+
+    // by dom hirerchy
+        // document.forms[0].elements[0].value = 'Upstandards';
+        // document.forms[0].elements[1].value = 'Save';
+    // by document name
+        document.home.fname.value = 'Subrat';
+
+    function changeBGColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</html>

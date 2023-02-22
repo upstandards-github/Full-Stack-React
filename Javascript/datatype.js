@@ -78,11 +78,11 @@ var obj1 = {key: 'value'};
 var person2 = {
     city:'Berhampur',
     age:28,
-    name:'Subrat'
+    name:'Subrat Bhola'
 };
 
 document.getElementById('h2').innerHTML = person2.name;
-document.getElementById('name').innerHTML = person2.name;
+// document.getElementById('name').innerHTML = person2.name;
 
 var person3 = {
     age:28,
@@ -121,7 +121,18 @@ var employes = [
 
 console.log(`My name is ${employes[0].name}, i am from ${person3.city}, I am ${person3.age} yr Old`);
 
-
+var employeeObj = {
+    enum:1,
+    ename:Upstandards,
+    dept:10,
+    salary:10000,
+    address : {
+        landmark:'landmark',
+        city:'city',
+        state:'Odisha',
+        pin:760010
+    }
+}
 
 
 
