@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Room Amount: 2500/day</h2>
+    <section>
+    <form name="booking">
+        <div>
+            <label for="fullname">fullname</label>
+            <input type="text" name="fullname" id="fullname">
+        </div>
+        <div>
+            <label for="days">Total Days</label>
+            <input type="number" name="days" value="1" id="days">
+        </div>
+        <div>
+            <label for="person">Total Person</label>
+            <input type="text" name="person" id="person">
+        </div>
+        <div>
+            <label for="advance">Advance</label>
+            <input type="number" name="advance" id="advance">
+        </div>
+        <div>
+            <p>Default range slider:</p>
+  <input type="range" min="1" max="100" value="50" id="range" onchange="updateRange()">
+  <strong id="rangeValue"></strong>
+        </div>
+
+        <div>
+            <input type="button" onclick="calculatePrice()" value="Calcute">
+        </div>
+    </form>
+</section>
+<section>
+    <table>
+        <tr>
+            <th>Customer Name</th>
+            <td id="fname"></td>
+        </tr>
+        <tr>
+            <th>Total Number of Days</th>
+            <td id="day"></td>
+        </tr>
+        <tr>
+            <th>Total No of Person</th>
+            <td id="persons"></td>
+        </tr>
+        <tr>
+            <th>Room Amount</th>
+            <td id="roomAmount"></td>
+        </tr>
+        <tr>
+            <th>Advance Paid</th>
+            <td id="advanceAmount"></td>
+        </tr>
+        <tr>
+            <th>Balance Amount</th>
+            <td id="balance"></td>
+        </tr>
+    </table>
+</section>
+<script>
+
+    function updateRange(){
+        var range = document.getElementById('range').value;
+        document.getElementById('rangeValue').innerText = range;
+    }
+    function calculatePrice() {
+        // alert('Hello');
+       
+        var fullname = document.getElementById('fullname').value;
+        var days = document.getElementById('days').value;
+        var persons = document.getElementById('person').value;
+        var advance = document.getElementById('advance').value;
+        var roomAMount = 2500 * days;
+        var balanceAmount = roomAMount - advance;
+        // alert(balanceAmount);
+        document.getElementById('fname').innerHTML = `<span style="color:blue">${fullname}</span>`;
+        document.getElementById('day').innerText = days;
+        document.getElementById('persons').innerText = persons;
+        document.getElementById('advanceAmount').innerText = advance;
+        document.getElementById('roomAmount').innerText = roomAMount;
+        document.getElementById('balance').innerHTML = `<strong>${balanceAmount}</strong>`
+    }
+</script>
+</body>
+</html>
