@@ -49,3 +49,46 @@ DataType :
   2. Non-primitive datatypes
       object: object, array, date
 
+      Statements
+      ==============
+      conditional Statements
+        if, switch
+      iteration
+      jump
+      exception handling 
+
+      if Statements
+      ===================
+      // one condition
+      if (condition){
+        code;
+      }
+
+     // two condition
+    if (condition){
+        code;
+      } else if (condition){
+        conde;
+      }
+
+      // else
+    if (condition){
+        code;
+      } else if (condition){
+        code;
+      } else {
+        code;
+      }
+
+    // nested if
+      if (condition){
+        if (condition 2){
+          if (condition 3){
+            
+          }
+        }
+      }
+
+
+
+

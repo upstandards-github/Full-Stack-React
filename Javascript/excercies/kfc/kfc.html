@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            text-align: center;
+        }
+
+        .imgSize {
+            width: 100%;
+            height: 100px;
+        }
+
+        .orderBanner {
+            text-align:center;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .inner-flex {
+            width: 300px;
+        }
+        .lunch {
+            height: 150px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div>
+            <img src="./image/ban.png" class="imgSize" alt="">
+        </div>
+        <div>
+            <img src="./image/sec.png" height="150px" width="100%" alt="">
+        </div>
+        <div>
+          Name:  <input type="text" id="fullname">
+        </div>
+    </section>
+    <section class="orderBanner">
+        <strong>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</strong>
+    </section>
+
+    <section>
+        <h3>CHICKEN BUCKETS</h3>
+        <div class="flex">
+            <div class="inner-flex">
+                <img src="./image/lunch2.jpg" class="lunch" alt="">
+                <input type="radio" name="lunch" id="peri"> Peri Peri 5 Leg Pc Meal Rs500
+            </div>
+            <div class="inner-flex">
+                <img src="./image/lunch3.jpg" class="lunch"  alt="">
+                <input type="radio" name="lunch" id="bucket"> Stay Home Bucket Rs700
+            </div>
+        </div>
+    </section>
+<hr>
+    <section>
+        <h3>SNACKS</h3>
+        <div class="flex">
+            <div class="inner-flex">
+                <img src="./image/snack.jpg" class="lunch" alt="">
+                <input type="checkbox" name="lunch" id="choco">Choco Lava cafe Rs300
+            </div>
+            <div class="inner-flex">
+                <img src="./image/snack2.jpg" class="lunch"  alt="">
+                <input type="checkbox" name="lunch" id="fries"> frech fries Rs400
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section>
+        <button style="color: white;background-color: red; padding: 2px; border-radius: 3px;" onclick="checkOut()">Checkout</button>
+    </section>
+    <br><br>
+    <section id="result">
+
+    </section>
+    <br><br>
+</body>
+<script src="./kfc.js"></script>
+</html>
