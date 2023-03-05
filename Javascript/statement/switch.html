@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement</title>
+</head>
+<body>
+    <h1>Switch Statement</h1>
+</body>
+<script>
+    var dayCount = 8;
+    var dayCount2 = 10;
+
+    if(dayCount >dayCount2){
+        console.log(`${dayCount} is greater then ${dayCount2}`)
+    } else {
+        console.log(`${dayCount2} is greater then ${dayCount}`)
+    }
+
+    switch(dayCount){
+        case 1:
+            console.log('Today is Sunday');
+            break;
+        case 2:
+            console.log('Today is Monday');
+            break;
+        case 3:
+            console.log('Today is Tue');
+            break;
+        case 4:
+            console.log('Today is Wed');
+            break;
+        case 5:
+            console.log('Today is Thu');
+            break;
+        case 6:
+            console.log('Today is Friday');
+            break;
+        case 7:
+            console.log('Today is Sat');
+            break;
+        default:
+            console.log('Invalid day Count')
+    }
+
+    
+</script>
+</html>

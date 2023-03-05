@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <h1>Loops in Javascript</h1>
+    <ul>
+        <li>for</li>
+        <li>for in</li>
+        <li>for of</li>
+        <li>foreach</li>
+        <li>while</li>
+        <li>do while</li>
+    </ul>
+</body>
+<script>
+    // document.write(1+',');
+    // document.write(2+',');
+    // document.write(3+',');
+    // document.write(4+',');
+    // document.write(5+',');
+    // document.write(6+',');
+    // document.write(7+',');
+    // document.write(8+',');
+    // document.write(9+',');0
+    // document.write(10);
+
+    // for (var i = 1;i<=10;i++){
+    //     document.writeln(i);
+    // }
+
+    // for (var a = 10; a>=1;a--){
+    //     document.writeln(a);
+    // }
+
+    for (var i= 1; i<=10; i++) {
+        if (i%2==0) {
+        document.writeln(i);
+        } 
+    }
+    for (var a= 1; a<=10; a++) {
+        if (a%2!=0)
+        document.writeln(a);
+    }
+
+    document.writeln('<br>');
+
+    var names = ['Sameer', 'Priyanka', 'Asutosh'];
+    // document.writeln(names[0]);
+    // document.writeln(names[1]);
+    // document.writeln(names[2]);
+    for (let i = 0; i < names.length;i++ ){
+        document.writeln(names[i]);
+    }
+    document.write('<br>');
+var details = {
+    name:['Sameer', 'Priyanka', 'Asutosh'],
+    age:30,
+    qalification:'bca'
+}
+
+// for (let i = 0;i < details.name.length;i++){
+//     details.name[i]
+// }
+// Array of object
+// detailsArray[0].name
+var detailsArray = [
+    {
+        name:'Upstandards',
+        age:30,
+        qalification:'bca',
+        marks:[75,75,75,75,75,75]
+    },
+    {
+        name:'sameer',
+        age:20,
+        qalification:'btech',
+        marks:[75,80,90,65,100,100]
+    },
+    {
+        name:'priyanka',
+        age:20,
+        qalification:'arts',
+        marks:[75,80,90,75,100,100]
+    },
+    {
+        name:'Asutosh',
+        age:20,
+        qalification:'science',
+        marks:[75,90,90,75,100,100]
+    },
+]
+
+// My name is upstandards , i am 30 yr old, my qalification is bca, My sequred percentage is 75%
+    for (let i = 0; i < detailsArray.length;i++ ){
+        document.writeln(`My name is ${detailsArray[i].name}, i am ${detailsArray[i].age} yr old, my qualification is ${detailsArray[i].qalification}`);
+        document.write('<br>');
+    }
+
+    var arr = [10,10,10,10,10,20];
+    var sum = 0;
+    for (let i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    console.log(sum)
+</script>
+</html>

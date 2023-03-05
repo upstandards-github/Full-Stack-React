@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <section>
+        <div><label for=""><input type="number" name="" id="num1"></label></div>
+        <div><label for=""><input type="number" name="" id="num2"></label></div>
+        <br>
+        <hr>
+        <div>
+            <button onclick="calculator('sum')">+</button>
+            <button onclick="calculator('sub')">-</button>
+            <button onclick="calculator('mul')">*</button>
+            <button onclick="calculator('div')">/</button>
+        </div>
+        <div>
+            outPut: <span id="result"></span>
+        </div>
+    </section>
+</body>
+<script>
+   function calculator(arg1){
+    var number1 = document.getElementById('num1').value;
+    var number2 = document.getElementById('num2').value;
+    number1 = Number(number1);
+    number2 = Number(number2);
+    var output = document.getElementById('result');
+
+    switch(arg1){
+        case 'sum':
+            output.innerText = number1+number2;
+            break;
+        case 'sub':
+            output.innerText = number1-number2;
+            break;
+        case 'mul':
+            output.innerText = number1*number2;
+            break;
+        case 'div':
+            output.innerText = number1/number2;
+            break;
+        default:
+            output.innerText ='Invalid';
+            break;
+        
+    }
+
+   }
+</script>
+</html>

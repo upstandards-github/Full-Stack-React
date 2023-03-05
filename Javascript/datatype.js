@@ -99,6 +99,7 @@ var person3 = {
     }
 };
 
+person3.address.courses[0]
 // to access object , objectname.propertyname
 
 
