@@ -107,5 +107,44 @@ var detailsArray = [
         sum+=arr[i];
     }
     console.log(sum)
+
+    //for in
+    var obj1 = {
+        name:'Upstandards',
+        age:23,
+        city:'Berhampur',
+        state:'Odisha'
+    };
+    var abc = 10;
+    console.log(abc); //10
+    console.log('abc'); //10
+
+   console.log(obj1.name === obj1['name']);
+
+    for(var element in obj1){
+        console.log(obj1[element]);
+    }
+
+var str = 'Upstandards';
+for (let a of str){
+    console.log(a);
+}
+
+var whilenum = 1;
+
+while(whilenum <=10){
+  console.log(whilenum)
+  whilenum++;
+}
+
+do {
+    console.log(whilenum);
+    whilenum++;
+}
+while (whilenum >15);
+
+    
+
+
 </script>
 </html>

@@ -149,5 +149,17 @@ for (initialization;condition;increment){
   code
 }
 
+initialization;
+while(condition){
+  code;
+  increment/decrement
+}
+
+do {
+ code;
+ increment/decrement
+}
+while (condition)
+
 
 
