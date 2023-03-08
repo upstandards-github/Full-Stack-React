@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Create Element</title>
+</head>
+<body>
+    <h1>Dynamic DropDown</h1>
+    <hr>
+    <div>
+        <label for="">State</label>
+        <select name="state" id="state">
+            <option value="select">select</option>
+            <option value="odisha">Odisha</option>
+            <option value="telengana">Telengana</option>
+            <option value="andhraPradesh">Andhra Pradesh</option>
+        </select>
+    </div>
+
+    <br>
+    <div>
+        <label for="">District</label>
+        <select name="district" id="district">
+            <option value="select">select</option>
+            <!-- <option value="Odisha">Ganjam</option>
+            <option value="Telengana">Balasore</option>
+            <option value="Andhra Pradesh">Cuttack</option> -->
+        </select>
+    </div>
+</body>
+<script>
+var district = {
+    odisha:['Ganjam','Khorda','Bhadrak'],
+    telengana:['Hyderabad','warrangle','rangareddy'],
+    andhraPradesh:[]
+}
+</script>
+</html>

@@ -11,14 +11,44 @@
     <hr>
     <div>
         <label for="">Items Name</label>
-        <input type="text">
-        <button>Add</button>
+        <input type="text" id="items">
+        <button onclick="addItems()">Add</button>
     </div>
     <div>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+        <ul class="list-group">
+            <li class="list-group-items">Item 1</li>
+            <li class="list-group-items">Item 2</li>
+            <li class="list-group-items">Item 3</li>
         </ul>
+        <h1 class="list-group"></h1>
     </div>
+
+    <div class="divClass">
+
+    </div>
+
+    <table class="demoTable" style="border: 1px solid red;">
+        <tr>
+            <td>Hello</td>
+        </tr>
+    </table>
 </body>
+<script>
+    var listGroup = document.querySelector('.list-group');
+    listGroup = document.getElementsByClassName('list-group')[0];
+    var table = document.querySelector('.demoTable');
+
+    function addItems() {
+       var item = document.getElementById('items').value;
+       var li = document.createElement('li');
+       li.textContent = item;
+       listGroup.appendChild(li);
+
+       var tr = document.createElement('tr');
+       var td = document.createElement('td');
+       td.textContent = item;
+       tr.appendChild(td);
+       table.appendChild(tr);
+    }
+</script>
 </html>

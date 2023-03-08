@@ -162,4 +162,20 @@ do {
 while (condition)
 
 
+Jump 
+--------
+break : 
+continue
+return
+
+document object
+==================
+
+document.getElementByID
+
+document.createElement('element name');
+document.querySelector
+
+
+
 
