@@ -11,7 +11,7 @@
     <hr>
     <div>
         <label for="">State</label>
-        <select name="state" id="state">
+        <select name="state" id="state" onchange="populateCity()">
             <option value="select">select</option>
             <option value="odisha">Odisha</option>
             <option value="telengana">Telengana</option>
@@ -29,12 +29,67 @@
             <option value="Andhra Pradesh">Cuttack</option> -->
         </select>
     </div>
+    <hr>
+    <div>
+        <label for="">Category</label>
+        <select name="category" id="category" onchange="populateItems()">
+            <option value="select">select</option>
+            <option value="electronics">electronics</option>
+            <option value="shoes">Shoes</option>
+            <option value="furniture">furniture</option>
+        </select>
+    </div>
+
+    <br>
+    <div>
+        <label for="">Items</label>
+        <select name="item" id="item">
+            <option value="select">select</option>
+            <!-- <option value="Odisha">Ganjam</option>
+            <option value="Telengana">Balasore</option>
+            <option value="Andhra Pradesh">Cuttack</option> -->
+        </select>
+    </div>
 </body>
 <script>
 var district = {
-    odisha:['Ganjam','Khorda','Bhadrak'],
-    telengana:['Hyderabad','warrangle','rangareddy'],
-    andhraPradesh:[]
+    odisha:['select','Ganjam','Khorda','Bhadrak','balasore'],
+    telengana:['select','Hyderabad','warrangle','rangareddy'],
+    andhraPradesh:['select','ichhapur', 'vizag', 'rajmandrya']
+}
+
+var shopping = {
+    electronics:['select','Mobile','tablet','laptop'],
+    shoes:['select','Adidas','puma','asics'],
+    furniture:['select','khata', 'kabata', 'chairaa']
+}
+
+
+
+function populateCity() {
+    var state = document.getElementById('state').value;
+    var parentdist = document.getElementById('district');
+    parentdist.innerHTML = '';
+
+    for (let i = 0;i < district[state].length; i++){
+        var option = document.createElement('option');
+        option.value = district[state][i];
+        option.textContent =  district[state][i];
+        parentdist.appendChild(option);
+    }
+}
+
+function populateItems() {
+    var stuffs = document.getElementById('category').value;
+    var items = document.getElementById('item');
+    items.innerHTML='';
+
+    for (let i=0; i< shopping[stuffs].length; i++) {
+        var option = document.createElement('option');
+        option.textContent = shopping[stuffs][i];
+        items.appendChild(option);
+    }
+    // console.log(stuffs);
 }
 </script>
 </html>
