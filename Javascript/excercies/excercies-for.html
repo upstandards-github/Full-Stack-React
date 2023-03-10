@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercies</title>
+</head>
+<body>
+    <h1>Percentage Calculator</h1>
+    <hr>
+</body>
+<script>
+    var detailsArray = [
+    {
+        name:'Upstandards',
+        age:30,
+        qalification:'bca',
+        marks:[75,75,75,75,75,80]
+    },
+    {
+        name:'sameer',
+        age:20,
+        qalification:'btech',
+        marks:[75,80,90,65,100,100]
+    },
+    {
+        name:'priyanka',
+        age:20,
+        qalification:'arts',
+        marks:[75,80,90,75,100,100]
+    },
+    {
+        name:'Asutosh',
+        age:20,
+        qalification:'science',
+        marks:[75,90,90,75,100,100]
+    },
+]
+var securedMark = 0;
+// My name is upstandards , i am 30 yr old, my qalification is bca, My sequred percentage is 75%
+    for (let i = 0; i < detailsArray.length;i++ ){
+        var perc = 0;
+        var totalMark = 600;
+        securedMark = 0;
+        var markArray = detailsArray[i].marks;
+        for (let j = 0;j < markArray.length ;j++ ){
+            securedMark+=markArray[j]
+        }
+
+        perc = (securedMark/totalMark)*100;
+        console.log(perc);
+        console.log(securedMark);
+        document.writeln(`My name is ${detailsArray[i].name}, i am ${detailsArray[i].age} yr old, my qualification is ${detailsArray[i].qalification}, My sequred percentage is ${perc.toFixed(2)}%`);
+        document.write('<br>');
+    }
+</script>
+</html>

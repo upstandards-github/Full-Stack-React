@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+    <h1>Sorting with if statement</h1>
+    <hr>
+</body>
+<script>
+    var x =5;
+    var y = 6;
+    var z = 7;
+
+    if (x > y && x > z){
+         if (y > z){
+            document.writeln(`${z},${y},${x}`)
+         } else {
+            document.writeln(`${y},${z},${x}`)
+         }
+    } else if (y > x && y > z){
+        if (x > z){
+            document.writeln(`${z},${x},${y}`)
+        } else {
+            document.writeln(`${x},${z},${y}`)
+         }
+    } else if (z > x && z > y){
+        if (x > y){
+            document.writeln(`${y},${x},${z}`)
+        } else {
+            document.writeln(`${x},${y},${z}`)
+         }
+    }
+
+    var arr = [1,0,5,3,4,7];
+    const sortArray = arr.sort((a,b)=>a-b);
+    console.log(sortArray);
+
+    let arr_3   = [4, 6, 7];
+    let arr_4    = [8, 1, 9];
+    let output = [];
+
+    for (let i = 0;i <arr_3.length;i++){
+        var sum = arr_3[i]+arr_4[i];
+        output.push(sum);
+    }
+    console.log(output);
+</script>
+</html>
