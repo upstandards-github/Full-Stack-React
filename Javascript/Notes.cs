@@ -176,6 +176,10 @@ document.getElementByID
 document.createElement('element name');
 document.querySelector
 
+Hoisting
+===============
+
+
 
 
 
