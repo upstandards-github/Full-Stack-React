@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First Class Functions</h1>
+    <hr>
+
+    <div>
+        <label for="shoe">Shoe</label>
+        <input type="text" name="shoe" id="shoe">
+    </div>
+
+    <div>
+        <label for="shoe">Watch</label>
+        <input type="text" name="watch" id="watch">
+    </div>
+
+    <button onclick="proceedToPayment()">Proceed to Payment</button>
+</body>
+
+<script>
+
+    function proceedToPayment() {
+        var a = 10;
+      var productAmout =  calculate();
+      console.log(productAmout)
+      console.log('payment successfull')
+    }
+
+    function calculate(){
+        var shoe = document.getElementById('shoe').value;
+        var watch = document.getElementById('watch').value;
+
+        const productValue = parseInt(shoe)+parseInt(watch);
+        return productValue;
+    }
+</script>
+</html>
