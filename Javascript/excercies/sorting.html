@@ -48,5 +48,36 @@
         output.push(sum);
     }
     console.log(output);
+
+    function func2() {
+        for (var i = 0; i < 3;i++){
+            setTimeout(()=>{
+                console.log(i); // 3,3, 3
+            },0);
+        }
+    }
+
+    var arr = [1,2,3,4,5,6,7,8,9,10];
+    arr[2];
+    function func3() {
+        for (var i = 0; i < 10;i++){
+            setTimeout(()=>{
+                console.log(arr[i]); //undefined
+            },0);
+        }
+    }
+
+    1-100
+
+    function isExist(number) {
+        if (number > 10 && number <100){
+            console.log('Its Present');
+        }else {
+            console.log('not present');
+        }
+    }
+    isExist(15);
+    func3();
+    func2();
 </script>
 </html>

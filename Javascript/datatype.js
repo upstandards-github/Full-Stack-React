@@ -3,6 +3,7 @@
 var num1 = 30; //number
 var num2 = 20; //number
 
+
 // string
 
 let str1 = "Hello World"; //string
