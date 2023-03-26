@@ -58,8 +58,35 @@ console.log(num.toString().split(''));
 console.log(num.toString().split('').reverse());
 console.log(num.toString().split('').reverse().join(''));
 
-[1,2,3,1,3,1,1,2,1,1,1];
+// [1,2,3,1,3,1,1,2,1,1,1];
 
-myfuntion(1,3)
+// myfuntion(1,3);
+
+var radius = [2,3,4,6,5];
+
+const output1 = radius.includes(3);
+const output2 = radius.includes(10);
+console.log(output1);
+console.log(output2);
+
+var duplicateArray = [1,2,1,2,3,4,5,6,6];
+
+function removeDuplicate() {
+    var newArray = [];
+    for (var i = 0; i < duplicateArray.length; i++){
+        if (!newArray.includes(duplicateArray[i])){
+            newArray.push(duplicateArray[i])
+        }
+    }
+
+    return newArray;
+}
+
+const output = removeDuplicate();
+console.log(output);
+
+
+
+
 
 
