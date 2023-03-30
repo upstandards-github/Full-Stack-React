@@ -125,7 +125,7 @@ console.log(`My name is ${employes[0].name}, i am from ${person3.city}, I am ${p
 
 var employeeObj = {
     enum:1,
-    ename:Upstandards,
+    ename:'Upstandards',
     dept:10,
     salary:10000,
     address : {
