@@ -32,6 +32,12 @@ console.log(str.charAt(3));
 
 console.log(str.startsWith('Hel'));
 
+// var count = 0;
+// setInterval(()=> {
+//     count++;
+//     console.log(count);
+// }, 1000)
+
 
 
 
