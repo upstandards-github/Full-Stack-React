@@ -67,11 +67,28 @@
 
   const fname = employeeDetails.filter((x)=> x.age > 30).map((y)=> `${y.firstname} ${y.lastname}`);
 
-  const rname = employeeDetails.reduce((output, curr)=> {
+  const rname = employeeDetails.reduce((output2, curr)=> {
     if (curr.age > 30){
-      output.push(`${curr.firstname} ${curr.lastname}`)
+      output2.push(`${curr.firstname} ${curr.lastname}`)
     }
-    return output
+    return output2;
   },[]);
+
   console.log(fname);
   console.log(rname);
+
+  // '20000':2
+  // '30000':2
+  // '40000':1
+  const salaryObj = employeeDetails.reduce((output1, curr)=> {
+   
+    if (output1[curr.salary]){
+      output1[curr.salary]+=1;
+    } else {
+      output1[curr.salary] = 1
+    }
+    return output1;
+  },{});
+
+  console.log(salaryObj);
+
