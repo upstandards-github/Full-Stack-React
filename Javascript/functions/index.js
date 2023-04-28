@@ -1,56 +1,56 @@
 console.log('Functions');
 
-// a();
+a();
 
-// // function statement and function declaration
-//     function a() {
-//         console.log('a function called');
-//     }
+// function statement and function declaration
+    function a() {
+        console.log('a function called');
+    }
 
-// // function expression
+// function expression
 
-//     var test = 0;
+    var test = 0;
 
-//     var b = function () {
-//         console.log('function b called')
-//     };
+    var b = function () {
+        console.log('function b called')
+    };
     
-// // how to invoke or call functions
-// b();
+// how to invoke or call functions
+b();
 
-// // annonymous function
-// // function (){
+// annonymous function
+// function (){
 
-// // }
-// // parameters and arguments
-
-// function calculateSum(param1, param2) { //param 1 and param 2 is the parameters of the functions
-//     return param1+param2;
 // }
+// parameters and arguments
 
-// calculateSum(2,4);  //2 , 4 here is argument
+function calculateSum(param1, param2) { //param 1 and param 2 is the parameters of the functions
+    return param1+param2;
+}
 
-// //arrow functions
+calculateSum(2,4);  //2 , 4 here is argument
 
-// var b = ()=> {
-//     console.log('function b called')
-// };
+//arrow functions
+
+var b = ()=> {
+    console.log('function b called')
+};
 
 
-// // first class function or first class citizens
+// first class function or first class citizens
 
-// function start(param) {
-//     console.log('start function')
-//     param();
-// }
+function start(param) {
+    console.log('start function')
+    param();
+}
 
-// function end() {
-//     console.log('end function')
-// }
+function end() {
+    console.log('end function')
+}
 
-// console.log(end);
+console.log(end);
 
-// start(end);
+start(end);
 
 // clouser
 
