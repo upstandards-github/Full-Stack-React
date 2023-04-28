@@ -3,6 +3,7 @@
 var num1 = 30; //number
 var num2 = 20; //number
 
+
 // string
 
 let str1 = "Hello World"; //string
@@ -124,7 +125,7 @@ console.log(`My name is ${employes[0].name}, i am from ${person3.city}, I am ${p
 
 var employeeObj = {
     enum:1,
-    ename:Upstandards,
+    ename:'Upstandards',
     dept:10,
     salary:10000,
     address : {
